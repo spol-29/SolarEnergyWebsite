@@ -1,3 +1,4 @@
+from sympy import true
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -227,7 +228,7 @@ st.sidebar.markdown("<span style='font-size: 12px;'>*Please make sure that the s
 if len(selected_season) != 0:
     if(st.sidebar.button("Generate Predictions")):
         cols[1].markdown(f"<span style='font-size: 18px;'>Predicted polyPWR(watts): <span style='color: #7FFF00; font-weight: bold; font-style: italic; border: 1px solid white; border-radius: 5px; padding: 5px;'>{(predictedPolyPWR)}</span></span>", unsafe_allow_html=True)
-
+st.write("By Sriram Polineni")
 #Remove later
 hide_streamlit_style = """
             <style>
@@ -236,5 +237,3 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-st.write("By Sriram Polineni")
