@@ -187,7 +187,8 @@ cols[1].map(df)
 cols[0].write(weather_data.T)
 cols[0].markdown(f"<span style='font-size: 12px;'>^^Expand & Adjust dataframe config to view current weather data based on user input features(used to predict solar energy output)^^</span>", unsafe_allow_html=True)
 predictedPolyPWR = format(get_prediction(response_dict))
-st.write("By Sriram Polineni")
+st.write
+st.sidebar.markdown("<span style='font-size: 12px;'>By Sriram Polineni</span>", unsafe_allow_html=True)
 # # Create a geolocator object
 # geolocator = Nominatim(user_agent='my_app')
 
